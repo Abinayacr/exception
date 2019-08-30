@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript try-catch Statement</title>
+</head>
+<body>
+    <script>
+    try {
+        var a=parseInt(prompt("enter 1st no"));
+        var b=parseInt(prompt("enter 2nd no"));
+        
+        if(b==0)
+        {
+            throw("div by 0 err");
+        }
+        else
+        {
+        var c=a/b;
+        document.write(c);
+        }
+        
+    } catch(error) 
+    {
+        // Handle the error
+      alert("Caught error: " +error);
+    }
+     
+    // Continue execution
+    </script>
+</body>
+</html>         
